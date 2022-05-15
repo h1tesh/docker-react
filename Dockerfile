@@ -1,4 +1,4 @@
-# Build Phase is called builder
+# Build Phase is called builder, here we create a container and build our app, the results of which are placed in the /app/build directory
 FROM node:16-alpine as builder
 WORKDIR '/app'
 COPY package.json .
